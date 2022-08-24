@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.body {
+  background: url("../assets/SnakeBackground.png");
+  min-height: 100vh;
+  background-size: 140vw 130vh;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+#board {
+  margin-left: 10%;
+  min-width: 92vmin;
+  min-height: 90vmin;
+  background: linear-gradient(
+    rgba(163, 245, 95, 0.623),
+    rgba(182, 182, 33, 0.63)
+  );
+  border: 3px solid black;
+  display: grid;
+  grid-template-columns: repeat(18, 1fr);
+  grid-template-rows: repeat(18, 1fr);
+}
